@@ -19,8 +19,8 @@ The page showcases some of my favorite photos, and includes a simple layout with
 ## 🚀 Live Demo
 
 🌐 View the site here:  
-**[https://manyamahesh.github.io/photography-landing-page/](https://manyamahesh.github.io/photography-landing-page/)**  
-_(URL will be active after publishing with GitHub Pages)_
+[**[https://manyamahesh.github.io/photography-landing-page/](https://manyamahesh.github.io/photography-landing-page/)**  
+_(URL will be active after publishing with GitHub Pages)_](https://manyamahesh.github.io/codesoft-manya-photography/)
 
 ---
 
