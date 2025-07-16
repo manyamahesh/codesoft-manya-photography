@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manya Mahesh | Photography</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -29,34 +29,54 @@
 <section id="gallery" class="card">
   <h2>Gallery</h2>
   <div class="gallery-grid">
-    <img src="1.jpg" alt="photo">
-    <img src="2.jpg" alt="photo">
-    <img src="3.jpg" alt="photo">
-    <img src="4.jpg" alt="photo">
-    <img src="5.jpg" alt="photo">
-    <img src="6.jpg" alt="photo">
-    <img src="7.jpg" alt="photo">
-    <img src="8.jpg" alt="photo">
-    <img src="9.jpg" alt="photo">
-    <img src="10.jpg" alt="photo">
-    <img src="11.jpg" alt="photo">
+    <img src="1.jpg" alt="photo" onclick="openLightbox(this)">
+    <img src="2.jpg" alt="photo" onclick="openLightbox(this)">
+    <img src="3.jpg" alt="photo" onclick="openLightbox(this)">
+    <img src="4.jpg" alt="photo" onclick="openLightbox(this)">
+    <img src="5.jpg" alt="photo" onclick="openLightbox(this)">
+    <img src="6.jpg" alt="photo" onclick="openLightbox(this)">
+    <img src="7.jpg" alt="photo" onclick="openLightbox(this)">
+    <img src="8.jpg" alt="photo" onclick="openLightbox(this)">
+    <img src="9.jpg" alt="photo" onclick="openLightbox(this)">
+    <img src="10.jpg" alt="photo" onclick="openLightbox(this)">
+    <img src="11.jpg" alt="photo" onclick="openLightbox(this)">
   </div>
 </section>
 
 <section id="about" class="card">
   <h2>About Me</h2>
-  <p>Hi! I’m Manya — a photography enthusiast who loves capturing moments, moods, and little stories through my lens. Whether it’s nature, portraits, or street life, I enjoy framing scenes that feel real and honest. This is a small window into how I see the world.</p>
+  <p>Hey there! I'm Manya — part lens lover, part moment chaser.  
+  I shoot anything that makes me pause — a quiet sunset, a loud street, or just a really good cup of chai.  
+  Photography, for me, isn’t just a passion — it's how I flirt with light and frame stories one shutter at a time.  
+  If my photos could talk, they’d spill secrets in color.</p>
 </section>
 
 <section id="contact" class="card">
   <h2>Contact</h2>
   <p>Email: manyamahesh1504@gmail.com</p>
-  <p>Instagram: @your_instagram_here</p>
+  <p>Instagram: <a href="https://instagram.com/shotsbymanyamahesh" target="_blank">@shotsbymanyamahesh</a></p>
 </section>
 
 <footer>
   <p>&copy; 2025 Manya Mahesh | All Rights Reserved</p>
 </footer>
+
+<!-- Lightbox overlay -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="enlarged photo" />
+</div>
+
+<!-- JS Lightbox Script -->
+<script>
+  function openLightbox(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = img.src;
+  }
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
 
 </body>
 </html>
